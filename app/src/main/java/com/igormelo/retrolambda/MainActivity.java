@@ -12,6 +12,19 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Button button = (Button) findViewById(R.id.button);
+        //TODO Simplificado com retrolambda
         button.setOnClickListener(e -> Toast.makeText(this, "Clicked", Toast.LENGTH_SHORT).show());
+
+
+
+        ////TODO Como ficaria
+        /*button.setOnClickListener(new View.OnclickListener(){
+        @Override
+            public void onClick(View v){
+            Toast.makeText(this, "Clicked", Toast.LENGTH_SHORT).show());
+            }
+        }
+         */
+
     }
 }
